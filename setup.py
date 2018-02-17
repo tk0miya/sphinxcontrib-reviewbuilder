@@ -38,4 +38,9 @@ setup(
     include_package_data=True,
     install_requires=requires,
     namespace_packages=['sphinxcontrib'],
+    entry_points={
+        'sphinx.builders': [
+            'review = sphinxcontrib.reviewbuilder',
+        ],
+    },
 )
